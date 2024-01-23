@@ -25,24 +25,26 @@
 
         .bg-image {
             background-image:
-                linear-gradient(to bottom, rgba(19, 19, 24, 0.50),  rgba(19, 19, 24, 0.50)),
+                linear-gradient(to bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)),
                 url("Images/2.png");
         }
-        .bg-image1{
+
+        .bg-image1 {
             background-image:
-                linear-gradient(to bottom, rgba(19, 19, 24, 0.50),  rgba(19, 19, 24, 0.50)),
+                linear-gradient(to bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)),
                 url("Images/3.png");
         }
-        .bg-image2{
+
+        .bg-image2 {
             background-image:
-                linear-gradient(to bottom, rgba(19, 19, 24, 0.50),  rgba(19, 19, 24, 0.50)),
+                linear-gradient(to bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)),
                 url("Images/4.png");
         }
-        </style>
+    </style>
 </head>
 
 <body class="font-manrope border border-red-600">
-    <header class="container mx-auto">
+    <header class="container mx-auto relative">
         <nav class="container mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -63,7 +65,8 @@
                             <li class="hover:text-[#FF4240]"><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class=" text-2xl font-extrabold"> Hockey<span class="text-[#FF4240]">’</span>s</a>
+                    <a class=" lg:text-2xl text-lg font-extrabold"> Nexus Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex font-bold text-[#424247]">
                     <ul class="menu menu-horizontal px-1 ">
@@ -84,7 +87,7 @@
 
         <div class="carousel container mx-auto max-h-[500px] rounded-2xl my-10">
             <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full object-cover" />
+                <img src="Images/1.png" class="w-full object-cover " />
                 <div class="absolute flex gap-5  left-12 top-[80%] ">
                     <a href="#slide4"
                         class="btn btn-circle bg-gray-800 text-white border-gray-600 hover:text-gray-800 ">❮</a>
@@ -128,7 +131,18 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="bg-gray-800 container  lg:w-[40%]  p-6 rounded-2xl lg:absolute top-[470px] right-24">
+                <h1 class="font-bold text-2xl text-white">Meet all the heroes from the field</h1>
+                <p class="text-white/60 font-medium text-sm">"Discover our hockey heroes—icons of skill, passion, and sportsmanship, shaping the game's legacy."</p>
+            </div>
     </header>
+    <div class="bg-gray-800 container lg:hidden mx-auto  lg:w-[40%]  p-6 rounded-2xl lg:absolute top-[470px] right-24">
+        <h1 class="font-bold text-2xl text-white">Meet all the heroes from the field</h1>
+        <p class="text-white/60 font-medium text-sm">"Discover our hockey heroes—icons of skill, passion, and sportsmanship,
+            shaping the game's legacy."</p>
+    </div>
     <section class="container mx-auto mt-20">
         <div class="container mx-auto space-y-5 p-6 border-dashed border-y-2 border-gray-300">
             <h1 class="font-extrabold text-3xl text-center text-[#131318] ">Professional Hockeys Club</h1>
@@ -185,7 +199,8 @@
     </section>
     <section class="container mx-auto my-20">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
-            <div class=" bg-image bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl ">
+            <div
+                class=" bg-image bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl hover:scale-95 duration-500">
                 <h2 class="font-extrabold text-3xl text-white ">Junior Program</h2>
                 <p class="font-medium text-white text-lg">Youth-oriented initiative cultivating skills, teamwork, and
                     personal development, providing a supportive environment for
@@ -193,7 +208,7 @@
                 <button class="btn bg-[#FF4240] border-none text-white">Register Now!</button>
             </div>
             <div
-                class="bg-image1  bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl ">
+                class="bg-image1  bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl hover:scale-95 duration-500 ">
                 <h2 class="font-extrabold text-3xl text-white ">Teenager Program</h2>
                 <p class="font-medium text-white text-lg">Tailored activities for adolescents fostering skill
                     development, personal growth, and community engagement, creating a
@@ -201,7 +216,7 @@
                 <button class="btn bg-[#FF4240] border-none text-white">Register Now!</button>
             </div>
             <div
-                class="bg-image2 lg:col-span-2  bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl ">
+                class="bg-image2 lg:col-span-2  bg-no-repeat bg-cover bg-center space-y-5 pl-10 pt-32 pb-12 rounded-xl hover:scale-95 duration-500 ">
                 <h2 class="font-extrabold text-3xl text-white ">Professional Program</h2>
                 <p class="font-medium text-white text-lg">Specialized initiative for professionals, offering advanced
                     training, networking, and skill development, enhancing
@@ -223,8 +238,9 @@
 
     <section class="container mx-auto my-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/5.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/5.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
@@ -244,8 +260,9 @@
                 </div>
             </div>
 
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/6.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/6.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
@@ -266,8 +283,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/7.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/7.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
@@ -288,8 +306,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/8.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/8.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
@@ -310,8 +329,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/9.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/9.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
@@ -332,8 +352,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl">
-                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/10.png" alt="Jacket" /></figure>
+            <div class="card card-side flex-col lg:flex-row  bg-base-100 shadow-xl group hover:scale-95 duration-500">
+                <figure class=" lg:p-2 w-[80%] mx-auto"><img src="Images/10.png"
+                        class="group-hover:scale-110 duration-500" alt="Jacket" /></figure>
                 <div class="card-body">
                     <p class=" flex gap-12">
                         <span class=" flex gap-2 justify-center items-center"><i
